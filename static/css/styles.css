@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+#map {
+    width: 70%;
+    height: 100%;
+}
+
+.sidebar {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;    
+    padding: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px -5px #000;
+    border-radius: 5px;
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+    display: block;
+}
+
+.sidebar a:hover {
+    color:crimson;
+}
+
+.leaflet-div-icon {
+    border-radius: 50%;
+    background-color: #FF8A8A;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px -5px #000;
+}

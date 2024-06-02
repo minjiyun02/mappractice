@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneer Map</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="map"></div>
+        <div class="sidebar">
+            <h3>Choose the Continent</h3>
+            <ul>
+                <li><a href="/continent/asia"><img src="{{ url_for('static', filename='img/asiacard.png') }}" alt="Asia">Asia</a></li>
+                <li><a href="/continent/africa"><img src="{{ url_for('static', filename='img/africacard.png') }}" alt="Africa">Africa</a></li>
+                <li><a href="/continent/south-america"><img src="{{ url_for('static', filename='img/southamericacard.png') }}" alt="South America">South America</a></li>
+                <li><a href="/continent/north-america"><img src="{{ url_for('static', filename='img/northamericacard.png') }}" alt="North America">North America</a></li>
+                <li><a href="/continent/europe"><img src="{{ url_for('static', filename='img/europecard.png') }}" alt="Europe">Europe</a></li>
+                <li><a href="/continent/oceania"><img src="{{ url_for('static', filename='img/oceaniacard.png') }}" alt="Oceania">Oceania</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

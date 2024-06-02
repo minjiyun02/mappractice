@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function() {
         maxBounds: [[90, -180], [-90, 180]] // Restricting map to the whole world
     });
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
-
+    
     const circles = [
         { coords: [40, -100], label: 'North America', spots: 50, continent: 'north-america', color: 'blue' },
         { coords: [-15, -60], label: 'South America', spots: 50, continent: 'south-america', color: 'lightblue' },
